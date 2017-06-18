@@ -1,5 +1,15 @@
 # Strength by Numbers
 
+
+## RULES
+You can't use `require`.
+You can't use `Math`.
+You can't use `toString`.
+You can't use `String`.
+You can't use `Number`.
+You can't use `parseInt`.
+You can't use `toFixed`.
+
 ## TESTS
 
 #### `module.exports.add`
