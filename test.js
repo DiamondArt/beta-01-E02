@@ -65,8 +65,8 @@ module.exports = ({ test, describe, exports, code, $ }) => {
     testMath('max', pairs),
     testMath('min', pairs),
 
-    test.against('positive', (a, b) => a < 0 ? b < 0 : b > 0, pairs
-      .filter(([a, b]) => a !== 0 && b !== 0)),
+    test.against('positive', (a, b) => a === b, pairs
+      .map(pair => pair.map(Math.sign))),
 
     testOp('multiply', '*', flooredPairs),
     testOp('modulo', '%', flooredPairs, Math.trunc),
@@ -79,9 +79,5 @@ module.exports = ({ test, describe, exports, code, $ }) => {
 
     test.against('odd', isOdd, flooredSingle),
     test.against('even', n => !isOdd(n), flooredSingle),
-
-    test.against('clamp', (n, max) => n < max ? n : max, pairs),
-    test.against('rotate', (n, max) => n % max, flooredPairs
-      .filter(([ a, b ]) => a > 0 && b > 0)),
   ]
 }

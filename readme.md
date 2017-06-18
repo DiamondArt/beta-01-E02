@@ -1,10 +1,4 @@
-### The pilot
-If you don't have done it already, read
-[this](https://thot.psance/git/les-temoins-de-jeovascript/setup)
-to setup your workspace.
-
-
-Then `fork` this repository and `clone` your fork to start working on it.
+# Strength by Numbers
 
 ### `module.exports.add`
 export the function `add` that takes two number arguments
@@ -38,3 +32,7 @@ and returns if only one of them is negative.
 ### `module.exports.multiply`
 export the function `multiply` that takes two number arguments
 and returns the result of the multiplication of those two.
+
+### `module.exports.divide`
+export the function `divide` that takes two number arguments
+and returns the result of the division of those two.
