@@ -1,6 +1,5 @@
 # Strength by Numbers
 
-
 ## RULES
 You can't use `*`.  
 You can't use `/`.  
@@ -48,6 +47,10 @@ and returns true if when multiplied they should return a positive number.
 #### `multiply`
 export the function `multiply` that takes two number arguments
 and returns the result of the multiplication of those two.
+
+#### `modulo`
+export the function `modulo` that takes two number arguments
+and returns the remainder, just like the [remainder operator](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder)
 
 #### `divide`
 export the function `divide` that takes two number arguments
