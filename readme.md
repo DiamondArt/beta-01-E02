@@ -23,11 +23,6 @@ and returns the result of the addition of those two.
 export the function `sub` that takes two number arguments
 and returns the result of the substraction of those two.
 
-#### `sign`
-export the function `sign` that takes one number argument
-and return 1 if the number is positive, -1 if then number is negative
-and 0 if the number is exactly 0
-
 #### `abs`
 export the function `abs` that takes one number argument
 and returns it's absolute value.
@@ -40,9 +35,14 @@ given number arguments.
 export the function `min` that returns the smallest of the two
 given number arguments.
 
-#### `positive`
-export the function `positive` that takes two number arguments
-and returns true if when multiplied they should return a positive number.
+#### `sign`
+export the function `sign` that takes one number argument
+and return 1 if the number is positive, -1 if then number is negative
+and 0 if the number is exactly 0
+
+#### `sameSign`
+export the function `sameSign` that takes two number arguments
+and returns true if they have the same sign.
 
 #### `multiply`
 export the function `multiply` that takes two number arguments

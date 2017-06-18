@@ -59,13 +59,13 @@ module.exports = ({ test, describe, exports, code, $ }) => {
     testOp('add', '+', pairs),
     testOp('sub', '-', pairs),
 
-    testMath('sign', single),
     testMath('abs', single),
 
     testMath('max', pairs),
     testMath('min', pairs),
 
-    test.against('positive', (a, b) => a === b, pairs
+    testMath('sign', single),
+    test.against('sameSign', (a, b) => a === b, pairs
       .map(pair => pair.map(Math.sign))),
 
     testOp('multiply', '*', flooredPairs),
@@ -79,5 +79,15 @@ module.exports = ({ test, describe, exports, code, $ }) => {
 
     test.against('odd', isOdd, flooredSingle),
     test.against('even', n => !isOdd(n), flooredSingle),
+/*
+
+    describe('isNumber', [
+      test('')
+    ])
+
+    describe('fromString', [
+      test('')
+    ])
+*/
   ]
 }
