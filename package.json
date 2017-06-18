@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "update": "git checkout HEAD package.json test.js readme.md bonus.js && git pull base master",
+    "postinstall": "git remote add base https://thot.space/git/javascript/S01E02.git",
     "test": "node node_modules/thot-tester/bin/tester"
   },
   "keywords": [],
